@@ -1,1 +1,1 @@
-![](https://media.tenor.com/mjij2qERgX8AAAAM/art-black-and-white.gif)
+![](https://media.tenor.com/l7hcW3NF_YIAAAAd/andre-yaniv-kaleidoscope.gif)
