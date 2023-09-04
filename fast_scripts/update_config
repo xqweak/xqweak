@@ -16,3 +16,4 @@ function pullrepo(){
 
 # Update Config Files repo
 updaterepo "/home/r/Documents/xqweak" 
+updaterepo "/home/r/Documents/faces" 
