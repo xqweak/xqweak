@@ -112,4 +112,3 @@ let maplocalleader = ","
 set t_Co=256
 
 "set -g default-terminal "xterm"
-"fast testing
