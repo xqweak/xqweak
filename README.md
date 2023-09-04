@@ -1,6 +1,7 @@
 ![Banner](https://media0.giphy.com/media/8VSkHh1MWkMaRGG3UO/200.gif)
 
-# Hacker
-# Ctf Player
-# Deep Learning Enthusiast
-- I like to develop crazy stuff
+1. Hacker
+2. Ctf Player
+3. Deep Learning Enthusiast
+4. I like to develop crazy stuff
+5. Currently working as a penetration tester.
