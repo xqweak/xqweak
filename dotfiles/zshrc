@@ -23,7 +23,6 @@ alias wow="echo 'abriendo wow' ; wine64 /home/r/Documents/Games/wow/Wow.exe"
 alias labb="lab  | grep 'next lab'  | cut -d ' ' -f 4-  | xclip -sel clip ; echo copied ; xclip -sel clip -o"
 alias labr="lab -r  | grep 'next lab'  | cut -d ' ' -f 4-  | xclip -sel clip ; xclip -sel clip -o"
 alias rustscan="/home/r/.cargo/bin/rustscan"
-alias gf="gf"
 alias genymotion="/home/r/Documents/genymotion/genymotion/genymotion"
 alias changeip='sudo torctl chngid; donde'
 alias toribash="bash /home/r/Documents/toribash/toribash"
