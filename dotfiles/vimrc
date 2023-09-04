@@ -1,0 +1,114 @@
+let mapleader=" "
+
+set clipboard=unnamed
+
+syntax enable
+set scrolloff=999
+filetype plugin on
+
+set tabstop=4
+set softtabstop=4
+set shiftwidth
+set autoindent
+set cindent
+set smartindent
+set shiftwidth=4
+
+syntax on
+set tabstop=4
+filetype on
+set nu
+set ruler
+set list
+
+set ignorecase
+set smartcase
+
+set noswapfile
+set nobackup
+set incsearch
+
+set noerrorbells
+set modifiable
+set nolist
+
+inoremap ( ()<Esc>i
+inoremap { {}<Esc>i
+inoremap {<CR> {<CR>}<Esc>O
+inoremap [ []<Esc>i
+inoremap ' ''<Esc>i
+inoremap " ""<Esc>i
+
+" Configuración de archivos python
+autocmd FileType python map <leader><leader> :!clear ;python3 % <CR>
+autocmd FileType python map <leader>su :!clear & sudo python3 % <CR>
+autocmd FileType python map <leader>proxy :!clear ;service tor start;   proxychains python3 % <CR>
+autocmd FileType python map <leader>pp :!clear ;   proxychains python3 % <CR>
+autocmd FileType python map <leader>doc :!clear & pydocstyle % <CR>
+autocmd FileType python map <leader>code :!clear & pycodestyle % <CR>
+autocmd FileType python map <leader>lindt :!clear & pylint % <CR>
+autocmd FileType python map <leader>check :!clear & pylint % ; pycodestyle % ; pydocstyle % <CR>
+autocmd FileType python map <leader>pep8 :!clear & autopep8 % > pep8_% ; bat pep8_%<CR>
+autocmd FileType python map <leader>git :!clear & gitshit <CR>
+autocmd FileType python map <leader>del :!rm % <CR>
+autocmd FileType python map <leader>mitm :!clear ;HTTP_PROXY=127.0.0.1:8090 python3 % <CR>
+autocmd FileType python map <leader>burp :!clear ;HTTP_PROXY=127.0.0.1:8080 python3 % <CR>
+"autocmd FileType python map <leader>p :set paste  <CR>
+"autocmd FileType python map <leader>np :set nopaste <CR>
+" Configuración de archivos cpp
+autocmd FileType cpp map <leader><leader> :!clear & g++ -std=c++14 % <CR>
+autocmd FileType cpp map <leader><leader><leader> :!clear & ./a.out <CR>
+" Configuración de archivos en goland
+autocmd FileType go map <leader><leader> :!clear & go run % <CR>
+" Configuración de archivos en julia
+autocmd BufRead,BufNewFile *.jl :set filetype=julia
+autocmd FileType julia map <leader><leader> :!clear & /home/r/Documents/julia-1.6.6/bin/julia % <CR>
+" Configuración para archivos de markdown
+autocmd FileType markdown nmap <buffer><silent> <leader>p :call mdip#MarkdownClipboardImage()<CR>
+autocmd FileType markdown map <leader>md :!pandoc % -o %.pdf && echo "generated %.pdf"   <CR>
+autocmd FileType markdown map <leader>ok :!pandoc % -o %.pdf && echo "generated %.pdf" && okular %.pdf  <CR>
+autocmd filetype markdown setlocal nonumber
+" Para los scripts de bash
+autocmd FileType sh map <leader><leader> :!clear & bash % <CR>
+autocmd FileType sh map <leader>proxy :!clear ;service tor start;   proxychains bash % <CR>
+autocmd FileType sh map <leader>pp :!clear ;proxychains python3 % <CR>
+autocmd FileType sh map <leader>del :!rm % <CR>
+" Para los comandos de jupyter notebook
+autocmd Filetype ipynb nmap <leader>b :VimpyterInsertPythonBlock<CR>
+autocmd Filetype ipynb nmap <leader>j :VimpyterStartJupyter<CR>
+autocmd Filetype ipynb nmap <leader>n :VimpyterStartNteract<CR>
+" Para los comandos de Rust
+autocmd Filetype rust nmap <leader><leader> :! clear ; cargo run<CR>
+autocmd Filetype rust nmap <leader>co :!rustc % && echo % compiled<CR>
+autocmd Filetype rust nmap <leader>ch :!cargo check<CR>
+autocmd Filetype rust nmap <leader>fm :!cargo fmt<CR>
+autocmd Filetype rust nmap <leader>done :!cargo build --release && echo "executable stored in target/release!!!"<CR>
+
+call plug#begin()
+Plug 'Valloric/YouCompleteMe'
+set completeopt-=preview
+Plug 'ferrine/md-img-paste.vim'
+Plug 'JuliaEditorSupport/julia-vim'
+Plug 'lervag/vimtex'
+Plug 'tomlion/vim-solidity'
+Plug 'szymonmaszke/vimpyter'
+Plug 'dhruvasagar/vim-table-mode'
+Plug 'racer-rust/vim-racer'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
+
+" Configurción de Coc
+"coc.preferences.extensionUpdateCheck": "never"
+let g:ycm_filetype_blacklist = {'rust': 1}
+
+" Configuracion del Vimtex
+filetype plugin indent on
+syntax enable
+let g:vimtex_view_method = 'zathura'
+let g:vimtex_view_general_viewer = 'mupdf'
+let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
+let g:vimtex_compiler_method = 'latexrun'
+let maplocalleader = ","
+set t_Co=256
+
+"set -g default-terminal "xterm"

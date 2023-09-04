@@ -1,0 +1,18 @@
+#!/bin/bash
+# Simple script for uploading the files into github
+
+# Function for update repos
+function updaterepo(){
+	git -C $1 add -A
+	git -C $1 commit -m "updates from pwnlap on $(date)"
+	git -C $1 pull
+	git -C $1 push
+}
+
+# Function for update repos that are not mine
+function pullrepo(){
+	git -C $1 pull
+}
+
+# Update Config Files repo
+updaterepo "/home/r/Documents/xqweak" 

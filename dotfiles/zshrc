@@ -1,0 +1,46 @@
+export ZSH="$HOME/.oh-my-zsh"
+#ZSH_THEME="robbyrussell"
+ZSH_THEME="skaro"
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
+
+# Path
+export PATH=$PATH:/usr/local/go/bin:/usr/local/julia-1.8.0/bin:/home/r/Documents/anaconda/bin:/home/r/.local/bin:/snap/bin:/usr/sbin:/home/r/go/bin:/home/r/Documents/smuggler:/home/r/Documents/wordlistctl:/home/r/Documents/nmap2md:/home/r/.cargo/bin
+
+# Personal Aliases
+
+alias cat="bat"
+alias catt="/bin/cat"
+alias dl="cd ~/Downloads"
+alias doc="cd ~/Documents"
+alias hack="cd ~/HACK"
+alias minecraft="java -jar -Xmx1024M -Xms1024M   ~/Documents/Games/minecraft/minecraft.jar"
+alias xonsh="/home/r/.local/bin/xonsh"
+alias shutdown="/usr/sbin/shutdown"
+alias reboot="/usr/sbin/reboot"
+alias ifconfig="/usr/sbin/ifconfig"
+alias wow="echo 'abriendo wow' ; wine64 /home/r/Documents/Games/wow/Wow.exe"
+alias labb="lab  | grep 'next lab'  | cut -d ' ' -f 4-  | xclip -sel clip ; echo copied ; xclip -sel clip -o"
+alias labr="lab -r  | grep 'next lab'  | cut -d ' ' -f 4-  | xclip -sel clip ; xclip -sel clip -o"
+alias rustscan="/home/r/.cargo/bin/rustscan"
+alias gf="gf"
+alias genymotion="/home/r/Documents/genymotion/genymotion/genymotion"
+alias changeip='sudo torctl chngid; donde'
+alias toribash="bash /home/r/Documents/toribash/toribash"
+#
+# Screen i3
+alias screen="for i in {1..10} ; do bash ~/Documents/config_files_i3/screen.sh ; done"
+alias single="bash ~/Documents/config_files_i3/single.sh"
+
+# Termbin for http://termbin.com/
+alias termbin="nc termbin.com 9999"
+
+# Auto Start Tmux
+# tmux attach > /dev/null 2>&1 || tmux new > /dev/null 2>&1
+
+# Terminal in vim mode
+set -o vi
+
+if [[ $TERM == xterm ]]; then TERM=xterm-256color; fi
+bat -pp ~/.todo.md
+alias todo='vim ~/.todo.md'

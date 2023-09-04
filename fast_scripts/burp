@@ -1,0 +1,3 @@
+#!/bin/bash
+java -noverify -javaagent:/home/r/Documents/burpsuite_pro/burpsuite/burp/burploader.jar -jar /home/r/Documents/burpsuite_pro/burpsuite/burp/burpsuite_pro_v2022.8.5.jar
+

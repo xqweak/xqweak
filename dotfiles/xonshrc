@@ -1,0 +1,108 @@
+# Cosas de configuración
+# ----------------------------------------------------------------------
+$XONSH_SHOW_TRACEBACK = True
+# ----------------------------------------------------------------------
+
+
+# Librerías de xonrc
+# ----------------------------------------------------------------------
+xontrib load prompt_vi_mode
+xontrib load back2dir
+# ----------------------------------------------------------------------
+
+
+# Librerías de python
+# ----------------------------------------------------------------------
+# ----------------------------------------------------------------------
+
+
+# Funciones
+# ----------------------------------------------------------------------
+
+# Función para generar textos un parche con Openai
+# La temperatura (temp) es una variable que se refiere a lo genérica que es la
+# respuesta, 1 es una respuesta muy genérica (primera impresión) y 10 es una
+# respuesta muy fumada
+def generate_text(query, maxlen , temp):
+	import openai
+	openai.api_key = "fakeapi" # By the way i already consumed this api :(
+	obj = openai.Completion.create(
+		engine = "davinci",
+		prompt = query,
+		max_tokens = maxlen,
+		temperature=temp
+		)
+	text = obj["choices"][0]["text"]
+	print(text)
+	return(text)
+
+
+# ----------------------------------------------------------------------
+
+
+# Aliases
+# ----------------------------------------------------------------------
+aliases["cat"] = "bat"
+aliases["catt"] = "/bin/cat"
+aliases["dl"] = "cd ~/Downloads"
+aliases["doc"] = "cd ~/Documents"
+aliases["hack"] = "cd ~/HACK"
+aliases["htb"] = "sudo openvpn /home/r/HACK/hackthebox/openvpn/lab_xrrx.ovpn"
+aliases["tryhackme"] = "sudo openvpn /home/r/HACK/tryhackme/openvpn/0xe7272e.ovpn"
+aliases["hosts"] = "sudo vim /etc/hosts"
+aliases["htbdir"] = "cd ~/HACK/htb"
+aliases["config"] = "vim ~/Documents/config-files/update_config"
+aliases["wargame"] = "cd ~/HACK/Wargames"
+aliases["copy"] = "xclip -sel clip"
+aliases["minecraft"] = "java -jar -Xmx1024M -Xms1024M   ~/Documents/minecraft/TLauncher-2.86.jar"
+aliases["xonsh"] = "/home/r/.local/bin/xonsh"
+aliases["shutdown"] = "/usr/sbin/shutdown"
+aliases["reboot"] = "/usr/sbin/reboot"
+aliases["ifconfig"] = "/usr/sbin/ifconfig"
+aliases["wow"] = "echo 'abriendo wow' ; wine /home/r/Documents/wow/Wow.exe"
+aliases["labb"] = "lab  | grep 'next lab'  | cut -d ' ' -f 4-  | xclip -sel clip ; echo copied ; xclip -sel clip -o"
+aliases["labr"] = "lab -r  | grep 'next lab'  | cut -d ' ' -f 4-  | xclip -sel clip ; xclip -sel clip -o"
+aliases["rustscan"] = "/home/r/.cargo/bin/rustscan"
+aliases["gf"] = "gf"
+aliases[" donde"] = "anonsurf myip"
+aliases["edwin"] = "ssh malw@ssh.nvidia.saturnenterprise.io"
+aliases["tank"] = "ssh r@192.168.0.11"
+aliases["tank_remote"] = "ssh r@6.tcp.ngrok.io -p 19359" 
+aliases["mini"] = "ssh r@192.168.0.9"
+aliases["mini_remote"] = "ssh r@4.tcp.ngrok.io -p 18958"
+aliases["bext"] = "ssh r@192.168.0.4"
+aliases["crontab"] = "EDITOR=vim crontab -e"
+aliases["chat"] = "cd /home/r/Documents/alpaca.cpp/ ;  /home/r/Documents/alpaca.cpp/chat"
+aliases["todo"] = 'vim ~/.todo.md'
+aliases["ll"] = 'ls -la'
+# ----------------------------------------------------------------------
+
+# Xonsh styles.
+$PROMPT = '{BOLD_BLACK}{cwd_base}{RESET} ) '
+$XONSH_COLOR_STYLE = 'algol_nu'
+
+
+# XONSH WEBCONFIG END
+# tmux a >/dev/null 2>&1
+# tmux attach > /dev/null 2>&1 || tmux new > /dev/null 2>&1 ; tmux rename-session -t 0 "main" > /dev/null 2>&1
+# XONSH WEBCONFIG START
+$XONSH_COLOR_STYLE = 'default'
+# XONSH WEBCONFIG END
+bat -pp ~/.todo.md 
+
+
+# Configuración del path
+$PATH = ['/usr/local/go/bin',
+ '/usr/local/julia-1.8.0/bin',
+ '/home/r/Documents/anaconda/bin',
+ '/home/r/.local/bin',
+ '/snap/bin',
+ '/usr/sbin',
+ '/home/r/go/bin',
+ '/home/r/Documents/smuggler',
+ '/home/r/Documents/wordlistctl',
+ '/home/r/Documents/nmap2md',
+ '/home/r/.cargo/bin']
+
+# Print de que se está en una ventana de Xonsh
+print("Xonsh!!")
