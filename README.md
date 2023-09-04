@@ -5,3 +5,4 @@
 - Ctf Player
 - Currently working as a penetration tester.
 - Deep Learning Enthusiast
+- Python/Rust developer
