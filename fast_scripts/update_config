@@ -17,3 +17,5 @@ function pullrepo(){
 # Update Config Files repo
 updaterepo "/home/r/Documents/xqweak" 
 updaterepo "/home/r/Documents/faces" 
+# Materias de la Universidad
+updaterepo "/home/r/Universidad/0x01-MASD2"
