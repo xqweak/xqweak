@@ -1,0 +1,32 @@
+[global_config]
+  dbus = False
+  handle_size = 4
+  extra_styling = False
+  scroll_tabbar = True
+  homogeneous_tabbar = False
+[keybindings]
+[profiles]
+  [[default]]
+    urgent_bell = True
+    icon_bell = False
+    background_darkness = 0.93
+    background_type = transparent
+    cursor_blink = False
+    cursor_fg_color = "#000000"
+    cursor_bg_color = "#aaaaaa"
+    cursor_color_default = False
+    font = Source Code Pro Semi-Bold 11
+    foreground_color = "#839496"
+    show_titlebar = False
+    scrollbar_position = hidden
+    use_system_font = False
+    title_use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]
