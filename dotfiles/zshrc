@@ -29,7 +29,7 @@ alias toribash="bash /home/r/Documents/toribash/toribash"
 alias jwt_tool="python /home/r/Documents/repos/jwt_tool/jwt_tool.py"
 #
 # Screen i3
-alias screen="for i in {1..10} ; do bash ~/Documents/config_files_i3/screen.sh ; done"
+alias screen="bash ~/Documents/xqweak/fast_scripts/screenright.sh"
 alias single="bash ~/Documents/config_files_i3/single.sh"
 
 # Termbin for http://termbin.com/
