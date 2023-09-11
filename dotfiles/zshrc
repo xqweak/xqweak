@@ -27,6 +27,7 @@ alias genymotion="/home/r/Documents/genymotion/genymotion/genymotion"
 alias changeip='sudo torctl chngid; donde'
 alias toribash="bash /home/r/Documents/toribash/toribash"
 alias jwt_tool="python /home/r/Documents/repos/jwt_tool/jwt_tool.py"
+alias ls="lsd"
 #
 # Screen i3
 alias screen="bash ~/Documents/xqweak/fast_scripts/screenright.sh"

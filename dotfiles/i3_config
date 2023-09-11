@@ -404,11 +404,15 @@ exec discord  --start-minimized
 exec --no-startup-id xfce4-clipman
 
 # Configuración de workspaces
+# Social
 assign [class="discord"] $ws9
 assign [class="whatsdesk"] $ws9
+# Games
 assign [class="wow.exe"] $ws10
 assign [class="wow.exe"] $ws10
 assign [class="Wine"] $ws10
+assign [class="Minecraft* 1.20.1"] $ws10
+# Music
 assign [class="Spotify"] $ws11
 
 # Hacer todo en modo fibonacci 
