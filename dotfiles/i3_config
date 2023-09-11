@@ -407,6 +407,8 @@ exec --no-startup-id xfce4-clipman
 assign [class="discord"] $ws9
 assign [class="whatsdesk"] $ws9
 assign [class="wow.exe"] $ws10
+assign [class="wow.exe"] $ws10
+assign [class="Wine"] $ws10
 assign [class="Spotify"] $ws11
 
 # Hacer todo en modo fibonacci 
