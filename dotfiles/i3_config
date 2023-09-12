@@ -26,8 +26,8 @@ font xft:URWGothic-Book 11
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
 
-# start a terminal (quitar la kitty y poner terminator porque la chimba esa alarma)
-bindsym $mod+Return exec terminator
+# start a terminal (kitty)
+bindsym $mod+Return exec kitty
 
 # kill focused window
 #bindsym $alt+Shift+q kill
