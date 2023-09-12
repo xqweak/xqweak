@@ -65,7 +65,8 @@ autocmd BufRead,BufNewFile *.jl :set filetype=julia
 autocmd FileType julia map <leader><leader> :!clear ; julia % <CR>
 " Configuración para archivos de markdown
 autocmd FileType markdown nmap <buffer><silent> <leader>p :call mdip#MarkdownClipboardImage()<CR>
-autocmd FileType markdown map <leader>md :!pandoc % -o %.pdf && echo "generated %.pdf"   <CR>
+autocmd FileType markdown map <leader>md :!mdcat %   <CR>
+autocmd FileType markdown map <leader><leader> :!mdcat %   <CR>
 autocmd FileType markdown map <leader>ok :!pandoc % -o %.pdf && echo "generated %.pdf" && okular %.pdf  <CR>
 autocmd filetype markdown setlocal nonumber
 " Para los scripts de bash
