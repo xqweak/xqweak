@@ -1,4 +1,4 @@
-# Todo List:
+# Personal Stuff:
 1. **Leer codigo de BugCrowd** https://docs.bugcrowd.com/researchers/onboarding/welcome 
 2. **Linux Exploitation Course** https://github.com/nnamon/linux-exploitation-course
 3. **Inkscape tutorials** https://www.youtube.com/playlist?list=PLynG8gQD-n8BMplEVZVsoYlaRgqzG1qc4
