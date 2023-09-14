@@ -7,7 +7,7 @@
 
 # Universidad 
 1. Repasar topología
-2. Entendr que están haciendo en MASD2
+2. Entender que están haciendo en MASD2
 
 # Projects
 
