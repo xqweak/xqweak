@@ -414,6 +414,8 @@ assign [class="Wine"] $ws10
 assign [class="Minecraft* 1.20.1"] $ws10
 # Music
 assign [class="Spotify"] $ws11
+assign [title="Hack! - YouTube — Mozilla Firefox"] $ws11
+assign [title="SomaFM: Listen Now! — Mozilla Firefox"] $ws11
 
 # Hacer todo en modo fibonacci 
 # El repositorio se encuentra acá https://github.com/olemartinorg/i3-alternating-layout (es necesario instalar una dependencia con pip3)
@@ -429,4 +431,3 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
-

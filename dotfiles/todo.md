@@ -6,9 +6,8 @@
 5. **Android Hacking** https://www.youtube.com/watch?v=niRooMwDUPU&list=PLmqenIp2RQcjBWzwMZQbIkbuVDmkYi_KF
 
 # Universidad 
-1. Estudiar para parcial de energías
-2. Repasar topología
-3. Entendr que están haciendo en MASD2
+1. Repasar topología
+2. Entendr que están haciendo en MASD2
 
 # Projects
 
