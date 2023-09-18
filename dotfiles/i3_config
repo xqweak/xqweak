@@ -62,7 +62,7 @@ bindsym $mod+F3 exec burp
 bindsym $mod+F4 exec whatsdesk
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
-bindsym $mod+F5 exec spotify-launcher
+bindsym $mod+F5 exec spotify
 bindsym $mod+F6 exec blueberry
 bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b
