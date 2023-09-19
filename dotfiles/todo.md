@@ -14,7 +14,7 @@
 1. **Getting Banned From Bellman's casino** Reunir al grupo
 2. **AInfluencer** Hacer toda la clase de hostelworld
 3. **Machine Learnind: From 0 to Deep Hero** Hacer la parte 1 del curso
-4. **Scoop** Leer la doc: https://discord.com/developers/docs/getting-started
+4. **Scoop** Terminar el bot
 
 # Radios
 
