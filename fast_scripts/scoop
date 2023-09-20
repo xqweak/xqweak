@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $1 | tr "\n" " " | xclip -sel clip ; xclip -sel clip -o
+echo $1 | tr "\n" " " | tr -d "'" | xclip -sel clip ; xclip -sel clip -o
