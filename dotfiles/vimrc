@@ -96,6 +96,7 @@ Plug 'szymonmaszke/vimpyter'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'racer-rust/vim-racer'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 " Configurción de Coc
