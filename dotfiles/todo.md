@@ -4,6 +4,7 @@
 3. **Inkscape tutorials** https://www.youtube.com/playlist?list=PLynG8gQD-n8BMplEVZVsoYlaRgqzG1qc4
 4. **Gimp Tutorials** https://www.youtube.com/playlist?list=PLynG8gQD-n8Dl23X0o1HFu_5PmBl79niz
 5. **Android Hacking** https://www.youtube.com/watch?v=niRooMwDUPU&list=PLmqenIp2RQcjBWzwMZQbIkbuVDmkYi_KF
+6. **Lets Get Rusty!!!** https://www.youtube.com/playlist?list=PLai5B987bZ9CoVR-QEIN9foz4QCJ0H2Y8
 
 # Universidad 
 1. Repasar topología
