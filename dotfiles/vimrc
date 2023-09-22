@@ -84,6 +84,9 @@ autocmd Filetype rust nmap <leader>co :!rustc % && echo % compiled<CR>
 autocmd Filetype rust nmap <leader>ch :!cargo check<CR>
 autocmd Filetype rust nmap <leader>fm :!cargo fmt<CR>
 autocmd Filetype rust nmap <leader>done :!cargo build --release && echo "executable stored in target/release!!!"<CR>
+" mkdir -p ~/.vim/colors
+" curl -o ~/.vim/colors/badwolf.vim https://raw.githubusercontent.com/sjl/badwolf/master/colors/badwolf.vim
+autocmd FileType rust colorscheme badwolf
 
 call plug#begin()
 Plug 'Valloric/YouCompleteMe'
@@ -114,3 +117,4 @@ let maplocalleader = ","
 set t_Co=256
 
 "set -g default-terminal "xterm"
+"colorscheme badwolf
