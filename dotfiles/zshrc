@@ -28,6 +28,8 @@ alias changeip='sudo torctl chngid; donde'
 alias toribash="bash /home/r/Documents/toribash/toribash"
 alias jwt_tool="python /home/r/Documents/repos/jwt_tool/jwt_tool.py"
 alias ls="lsd"
+# flatpak install flathub com.stremio.Stremio 
+alias streamio="flatpak run com.stremio.Stremio"
 #
 # Screen i3
 alias screen="bash ~/Documents/xqweak/fast_scripts/screenright.sh"
