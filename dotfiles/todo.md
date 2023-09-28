@@ -7,8 +7,9 @@
 6. **Lets Get Rusty!!!** https://www.youtube.com/playlist?list=PLai5B987bZ9CoVR-QEIN9foz4QCJ0H2Y8
 
 # Universidad 
-1. Repasar topología
-2. Entender que están haciendo en MASD2
+1. Repasar topología.
+2. Entender que están haciendo en MASD2.
+3. Scrappear los datos del turismo para el proyecto del capstone.
 
 # Projects
 
