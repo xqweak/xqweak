@@ -56,9 +56,8 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 # bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 # Start Applications
-#bindsym $mod+Ctrl+b exec burp
 bindsym $mod+F2 exec firefox
-bindsym $mod+F3 exec burp
+bindsym $mod+F3 exec burpsuite 
 bindsym $mod+F4 exec whatsdesk
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
