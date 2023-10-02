@@ -398,7 +398,7 @@ mode "$mode_gaps_outer" {
 
 # Empezar demonios de aplicaciones de chat y música
 exec discord  --start-minimized  
-exec clementine
+#exec clementine
 
 # El clipman para copiar imagenes
 exec --no-startup-id xfce4-clipman
