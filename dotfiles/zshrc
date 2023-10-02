@@ -45,5 +45,5 @@ alias termbin="nc termbin.com 9999"
 set -o vi
 
 if [[ $TERM == xterm ]]; then TERM=xterm-256color; fi
-mdcat  ~/.todo.md
+#mdcat  ~/.todo.md
 alias todo='vim ~/.todo.md'
