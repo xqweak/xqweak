@@ -10,10 +10,10 @@
 
 **Semana del 2 al 9 de Octube**
 
-| Lunes | Martes                   | Miercoles    | Jueves            | Viernes               | Sabado | Domingo |
-|-------|--------------------------|--------------|-------------------|-----------------------|--------|---------|
-|       | Taller Topología         | Taller MASD2 | Parcial Topología | Scrappear HostelWorld |        |         |
-|       | Reunion Devsavant (11:30AM) |              | Enviar MASD2      |                       |        |         |
+| Lunes     | Martes                      | Miercoles | Jueves            | Viernes               | Sabado | Domingo |
+|-----------|-----------------------------|-----------|-------------------|-----------------------|--------|---------|
+| Topologia | Taller MASD2                | Topologia | Parcial Topología | Scrappear HostelWorld |        |         |
+|           | Reunion Devsavant (11:30AM) |           | Enviar MASD2      |                       |        |         |
 
 # Projects
 
@@ -26,4 +26,3 @@
 
 1. **SomaFM** https://somafm.com/listen
 2. **Hack!**  https://www.youtube.com/playlist?list=PLd1oSjQxEWgW6qCUj9u5HL7491J8tlESC
----
