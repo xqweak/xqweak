@@ -6,7 +6,7 @@ update_playlist() {
 	url=$2 # Url of the youtube playlist
 	mkdir -p "$HOME/Music/$name"  && echo ''
 	# Download the playlist
-	yt-dlp $url -x --audio-format mp3 --download-archive $HOME/Music/$name/songs.txt -o "$HOME/Music/$name/%(title)s.%(ext)s" # Download the playlist in mp3 or update it
+	yt-dlp $url -x --audio-format mp3 --download-archive $HOME/Music/$name/songs.txt -o "$HOME/Music/$name/%(title)s.%(ext)s" --add-metadata --postprocessor-args "-metadata album=$name"  # Download the playlist in mp3 or update it
 	echo "done"
 }
 
