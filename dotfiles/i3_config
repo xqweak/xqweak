@@ -396,8 +396,9 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-# Empezar demonios de aplicaciones de chat
+# Empezar demonios de aplicaciones de chat y música
 exec discord  --start-minimized  
+exec clementine
 
 # El clipman para copiar imagenes
 exec --no-startup-id xfce4-clipman
@@ -415,6 +416,8 @@ assign [class="Minecraft* 1.20.1"] $ws10
 assign [class="Spotify"] $ws11
 assign [title="Hack! - YouTube — Mozilla Firefox"] $ws11
 assign [title="SomaFM: Listen Now! — Mozilla Firefox"] $ws11
+assign [title="clementine"] $ws11
+assign [title="Clementine"] $ws11
 
 # Hacer todo en modo fibonacci 
 # El repositorio se encuentra acá https://github.com/olemartinorg/i3-alternating-layout (es necesario instalar una dependencia con pip3)
