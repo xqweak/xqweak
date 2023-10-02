@@ -13,3 +13,5 @@ update_playlist() {
 
 # Playlists ...
 update_playlist "Hack" "https://www.youtube.com/playlist?list=PLd1oSjQxEWgW6qCUj9u5HL7491J8tlESC"
+update_playlist "Musica_Toda" "https://www.youtube.com/playlist?list=PLk9fj9cXf62kZ7oi3IzMSCnltc0S1u9LT"
+update_playlist "Musica_toda" "https://www.youtube.com/playlist?list=PLk9fj9cXf62n4lyQ2ODCC9nP-rOTTXWvw"
