@@ -29,7 +29,7 @@ alias toribash="bash /home/r/Documents/toribash/toribash"
 alias jwt_tool="python /home/r/Documents/repos/jwt_tool/jwt_tool.py"
 alias ls="lsd"
 # flatpak install flathub com.stremio.Stremio 
-alias streamio="flatpak run com.stremio.Stremio"
+alias update_music="bash ~/Documents/xqweak/fast_scripts/update_music.sh"
 #
 # Screen i3
 alias screen="bash ~/Documents/xqweak/fast_scripts/screenright.sh"
