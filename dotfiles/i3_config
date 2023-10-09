@@ -413,6 +413,7 @@ assign [class="wow.exe"] $ws10
 assign [class="wow.exe"] $ws10
 assign [class="Wine"] $ws10
 assign [class="Minecraft* 1.20.1"] $ws10
+assign [class="Spelunky Classic HD"] $ws10
 # Music
 assign [class="Spotify"] $ws11
 assign [title="Hack! - YouTube — Mozilla Firefox"] $ws11
