@@ -40,6 +40,9 @@ alias single="bash ~/Documents/config_files_i3/single.sh"
 # Termbin for http://termbin.com/
 alias termbin="nc termbin.com 9999"
 
+# Nmap2md /home/r/Documents/repos/nmap2md
+alias nmap2md="python ~/Documents/repos/nmap2md/nmap2md.py"
+
 # Auto Start Tmux
 # tmux attach > /dev/null 2>&1 || tmux new > /dev/null 2>&1
 
