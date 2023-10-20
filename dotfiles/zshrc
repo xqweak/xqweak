@@ -30,6 +30,8 @@ alias jwt_tool="python /home/r/Documents/repos/jwt_tool/jwt_tool.py"
 alias ls="lsd"
 alias anon="sudo systemctl stop tor; curl ip.me ; sudo torctl start ; curl ip.me"
 alias noanon="curl ip.me ; sudo torctl stop; sudo systemctl start tor ; curl ip.me"
+alias icat="kitten icat"
+alias tmp="cd /tmp"
 # flatpak install flathub com.stremio.Stremio 
 alias update_music="bash ~/Documents/xqweak/fast_scripts/update_music.sh"
 #
