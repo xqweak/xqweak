@@ -398,7 +398,7 @@ mode "$mode_gaps_outer" {
 
 # Empezar demonios de aplicaciones de chat y música
 exec discord  --start-minimized  
-exec lollypop
+#exec lollypop
 #exec clementine
 
 # El clipman para copiar imagenes
