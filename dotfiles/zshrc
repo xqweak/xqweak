@@ -54,3 +54,6 @@ set -o vi
 if [[ $TERM == xterm ]]; then TERM=xterm-256color; fi
 #cat -pp  ~/.todo.md
 alias todo='vim ~/.todo.md'
+
+# Exporto la API KEY de chaos
+export CHAOS_KEY=$(cat ~/.chaos.txt)
