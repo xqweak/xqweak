@@ -36,8 +36,8 @@ alias tmp="cd /tmp"
 alias update_music="bash ~/Documents/xqweak/fast_scripts/update_music.sh"
 #
 # Screen i3
-alias screen="bash ~/Documents/xqweak/fast_scripts/screenright.sh"
-alias single="bash ~/Documents/config_files_i3/single.sh"
+#alias screen="bash ~/Documents/xqweak/fast_scripts/screenright.sh"
+#alias single="bash ~/Documents/config_files_i3/single.sh"
 
 # Termbin for http://termbin.com/
 alias termbin="nc termbin.com 9999"

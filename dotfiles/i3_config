@@ -15,9 +15,9 @@ default_floating_border pixel 0
 hide_edge_borders none
 
 # change borders
-bindsym $mod+u border none
+bindsym $mod+Shift+y border none
 bindsym $mod+y border pixel 1
-bindsym $mod+n border normal
+# bindsym $mod+n border normal
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -61,7 +61,7 @@ bindsym $mod+F3 exec burpsuite
 bindsym $mod+F4 exec whatsdesk
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
-bindsym $mod+F5 exec spotify
+bindsym $mod+F5 exec spotify-launcher
 bindsym $mod+F6 exec blueberry
 bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b
@@ -155,6 +155,7 @@ set $ws8 8
 set $ws9 social
 set $ws10 game
 set $ws11 music
+set $ws12 read
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -168,6 +169,7 @@ bindsym $mod+8 workspace $ws8
 bindsym $mod+o workspace $ws9
 bindsym $mod+i workspace $ws10
 bindsym $mod+p workspace $ws11
+bindsym $mod+u workspace $ws12
 
 # Move focused container to workspace
 bindsym $mod+Ctrl+1 move container to workspace $ws1
@@ -181,6 +183,7 @@ bindsym $mod+Ctrl+8 move container to workspace $ws8
 bindsym $mod+Ctrl+o move container to workspace $ws9
 bindsym $mod+Ctrl+i move container to workspace $ws10
 bindsym $mod+Ctrl+p move container to workspace $ws11
+bindsym $mod+Ctrl+u move container to workspace $ws12
 
 # Move to workspace with focused container
 bindsym $mod+Shift+1 move container to workspace $ws1; workspace $ws1
@@ -194,6 +197,7 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 bindsym $mod+Shift+o move container to workspace $ws9; workspace $ws9
 bindsym $mod+Shift+i move container to workspace $ws10; workspace $ws10
 bindsym $mod+Shift+p move container to workspace $ws11; workspace $ws11
+bindsym $mod+Shift+u move container to workspace $ws12; workspace $ws12
 
 # switch to workspace with urgent window automatically
 # for_window [urgent=latest] focus
@@ -422,6 +426,10 @@ assign [title="clementine"] $ws11
 assign [title="Clementine"] $ws11
 assign [title="Lollypop"] $ws11
 assign [title="lollypop"] $ws11
+# Read
+assign [class="okular"] $ws12
+assign [class="mupdf"] $ws12
+assign [class="calibre"] $ws12
 
 # Hacer todo en modo fibonacci 
 # El repositorio se encuentra acá https://github.com/olemartinorg/i3-alternating-layout (es necesario instalar una dependencia con pip3)
