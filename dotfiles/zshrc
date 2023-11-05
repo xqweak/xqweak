@@ -32,6 +32,7 @@ alias anon="sudo systemctl stop tor; curl ip.me ; sudo torctl start ; curl ip.me
 alias noanon="curl ip.me ; sudo torctl stop; sudo systemctl start tor ; curl ip.me"
 alias icat="kitten icat"
 alias tmp="cd /tmp"
+alias stressgpu="glxgears"
 # flatpak install flathub com.stremio.Stremio 
 alias update_music="bash ~/Documents/xqweak/fast_scripts/update_music.sh"
 #
