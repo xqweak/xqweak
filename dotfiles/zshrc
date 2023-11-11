@@ -59,3 +59,8 @@ alias todo='vim ~/.todo.md'
 
 # Exporto la API KEY de chaos
 export CHAOS_KEY=$(cat ~/.chaos.txt)
+
+# Open kitty in last path
+chpwd() {
+      echo $PWD > ~/.last_dir
+}
