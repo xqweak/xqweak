@@ -27,7 +27,8 @@ font xft:URWGothic-Book 11
 floating_modifier $mod
 
 # start a terminal (kitty)
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec kittycd
+bindsym Ctrl+Alt+t exec kittycd
 
 # kill focused window
 #bindsym $alt+Shift+q kill
