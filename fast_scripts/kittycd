@@ -1,0 +1,2 @@
+#!/bin/bash
+alias kittycd='kitty zsh -c "cd -; exec zsh"'
