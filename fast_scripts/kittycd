@@ -1,2 +1,3 @@
 #!/bin/bash
-kitty zsh -c "cd -; exec zsh"
+last_dir=$(cat ~/.last_dir)
+kitty zsh -c "cd $last_dir; exec zsh"
