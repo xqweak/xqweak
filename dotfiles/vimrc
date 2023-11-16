@@ -75,9 +75,8 @@ autocmd FileType sh map <leader>proxy :!clear ;service tor start;   proxychains 
 autocmd FileType sh map <leader>pp :!clear ;proxychains python3 % <CR>
 autocmd FileType sh map <leader>del :!rm % <CR>
 " Para los comandos de jupyter notebook
-autocmd Filetype ipynb nmap <leader>b :VimpyterInsertPythonBlock<CR>
-autocmd Filetype ipynb nmap <leader>j :VimpyterStartJupyter<CR>
-autocmd Filetype ipynb nmap <leader>n :VimpyterStartNteract<CR>
+autocmd FileType python map <leader>J :JupyterConnect <CR>
+vnoremap <leader><leader>R JupyterSendCell <CR>
 " Para los comandos de Rust
 autocmd Filetype rust nmap <leader><leader> :! clear ; cargo run<CR>
 autocmd Filetype rust nmap <leader>co :!rustc % && echo % compiled<CR>
@@ -119,20 +118,3 @@ set t_Co=256
 
 "set -g default-terminal "xterm"
 "colorscheme badwolf
-
-" TESTING VIM-JUPYTER
-" Run current file
-nnoremap <buffer> <silent> <localleader>R :JupyterRunFile<CR>
-nnoremap <buffer> <silent> <localleader>I :PythonImportThisFile<CR>
-
-" Change to directory of current file
-nnoremap <buffer> <silent> <localleader>d :JupyterCd %:p:h<CR>
-
-" Send a selection of lines
-nnoremap <buffer> <silent> <localleader>X :JupyterSendCell<CR>
-nnoremap <buffer> <silent> <localleader>E :JupyterSendRange<CR>
-nmap     <buffer> <silent> <localleader>e <Plug>JupyterRunTextObj
-vmap     <buffer> <silent> <localleader>e <Plug>JupyterRunVisual
-
-" Debugging maps
-nnoremap <buffer> <silent> <localleader>b :PythonSetBreak<CR>
