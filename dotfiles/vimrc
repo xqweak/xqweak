@@ -75,8 +75,7 @@ autocmd FileType sh map <leader>proxy :!clear ;service tor start;   proxychains 
 autocmd FileType sh map <leader>pp :!clear ;proxychains python3 % <CR>
 autocmd FileType sh map <leader>del :!rm % <CR>
 " Para los comandos de jupyter notebook
-autocmd FileType python map <leader><leader>j :!jupyter qtconsole --style=monokai > /dev/null & <CR> 
-autocmd FileType python map <leader>j :JupyterConnect <CR>
+autocmd FileType python map <leader>j :!jupyter qtconsole --style=monokai > /dev/null & <CR> :JupyterConnect
 vnoremap <leader>r :JupyterSendRange <CR>
 " Para los comandos de Rust
 autocmd Filetype rust nmap <leader><leader> :! clear ; cargo run<CR>
