@@ -34,6 +34,8 @@ alias icat="kitten icat"
 alias tmp="cd /tmp"
 alias stressgpu="glxgears"
 alias qtconsole="jupyter qtconsole --style=monokai"
+alias masluz="brightnessctl set +2%"
+alias menosluz="brightnessctl set 2%-"
 # flatpak install flathub com.stremio.Stremio 
 alias update_music="bash ~/Documents/xqweak/fast_scripts/update_music.sh"
 #
