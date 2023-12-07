@@ -64,8 +64,8 @@ bindsym $mod+F4 exec whatsdesk
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+F5 exec spotify-launcher
 bindsym $mod+F6 exec blueberry
-bindsym $mod+t exec --no-startup-id pkill picom
-bindsym $mod+Ctrl+t exec --no-startup-id picom -b
+#bindsym $mod+t exec --no-startup-id pkill picom
+#bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 #bindsym Print exec --no-startup-id i3-scrot
 bindsym Print exec xfce4-screenshooter
@@ -353,8 +353,8 @@ bindsym $mod+m bar mode toggle
 #############################
 
 # Set inner/outer gaps
-gaps inner 3
-gaps outer 3
+gaps inner 2
+gaps outer 0
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>
